@@ -1,0 +1,7 @@
+<div>
+    <div *ngIf = "errors$ | async as errors">
+        <h1>{{errors}}</h1>
+        <h1>HELL AND HEAVEN</h1>
+    </div> 
+    <app-users-list [usersList] = "usersList$ | async"  (deleteUserEvent) = "deleteUser($event)"></app-users-list>
+</div>
